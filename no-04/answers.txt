@@ -1,0 +1,21 @@
+Answer the following questions by editing this file and committing the updates.
+
+Given a C function which returns the factorial of an input x, what is the largest x 
+that produces a correct answer, and what is the value of that factorial, 
+assuming the return type of the function is: 
+
+1. char? 5!=120 [The first one is done for you to demonstrate what I'm looking for.]
+2. unsigned char = 5! = 120
+3. short = 7! = 5040
+4. unsigned short = 8! = 40320
+5. int = 12! = 479001600
+6. unsigned int = 12! = 479001600
+7. long 20! = 2432902008176640000
+8. unsigned long = 20! = 2432902008176640000
+
+9. Can the unsigned version of any integer type ever have a bigger x than the signed version?
+Yes, the unsigned version of an integer type can represent a bigger value for x than its signed counterpart.
+   
+10. If the unsigned version can have a bigger x, show an example where this is true. If not, why not?
+
+Yes, an unsigned version can represent a bigger x. For example, considering the int and unsigned int types, the maximum factorial x without overflow is higher for unsigned int due to its larger range of positive values. An unsigned int can store values from 0 to 2^32-1, while an int can store values from -2^31 to 2^31-1. This difference allows unsigned int to represent larger factorials than int before overflowing.
