@@ -15,6 +15,6 @@ Each project includes relevant source code files, build instructions, and someti
 
 ## Information for no' s
 
-From 01 to 11 I learned how to solve simple tasks.
-From 12 to 16 I implemented what I learned on a bit harder tasks
-From 17 to 19 are hardest tasks that I accomplished or still continue on generating.
+**From 01 to 11:** I learned how to solve simple tasks.
+**From 12 to 16:** I implemented what I learned on a bit harder tasks
+**From 17 to 19:** are hardest tasks that I accomplished or still continue on generating.
