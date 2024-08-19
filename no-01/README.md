@@ -18,24 +18,20 @@ make
 ```
 ## What I Learned
 
-During the development of this project, I gained several valuable insights:
+Working on this project taught me several key things:
 
-1. **Command-Line Argument Handling in C**:
-   - I learned how to access and manipulate command-line arguments in a C program using `argc` and `argv[]`.
-   - I practiced converting string arguments to integers using the `atoi` function, while understanding the importance of validating inputs.
+1. **Command-Line Arguments in C**:
+   - I learned how to use `argc` and `argv[]` to handle command-line arguments.
+   - I practiced converting strings to integers with `atoi` and realized the importance of checking inputs.
 
-2. **String Formatting in C**:
-   - I practiced using `printf` for formatted output, particularly for creating a clean, readable string that shows the sum of integers passed via command-line arguments.
+2. **Formatting Output in C**:
+   - I got better at using `printf` to format and display results clearly.
 
-3. **Makefile Basics**:
-   - I learned how to write a simple Makefile to automate the compilation process.
-   - I gained experience in defining targets such as `test`, `gdb`, and `clean` to streamline testing, debugging, and cleanup tasks.
+3. **Writing Makefiles**:
+   - I learned to create a simple Makefile to compile and test my code easily.
 
-4. **Debugging with GDB**:
-   - I enhanced my understanding of debugging by using GDB to inspect and troubleshoot my C code.
-   - I explored how to pass command-line arguments to a program directly within GDB, making it easier to diagnose issues related to input handling.
+4. **Using GDB for Debugging**:
+   - I improved my debugging skills with GDB, especially in handling command-line arguments during testing.
 
-5. **Error Handling Considerations**:
-   - Although this project focused on basic functionality, I recognized the importance of handling non-integer inputs and the need for more robust input validation in future projects.
-
-This project served as a hands-on introduction to command-line processing, Makefile usage, and debugging in C, laying the groundwork for more complex projects in the future.
+5. **Handling Errors**:
+   - I understood why it’s important to handle non-integer inputs and how I can make my programs more reliable in the future.
