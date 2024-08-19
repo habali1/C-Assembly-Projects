@@ -15,8 +15,8 @@ This project consists of two C programs, `addArgs.c` and `proj01.c`, which demon
 To compile the `addArgs` program, simply run:
 ```bash
 make
-
-What I Learned
+```
+#What I Learned
 
 During the development of this project, I gained several valuable insights:
 
