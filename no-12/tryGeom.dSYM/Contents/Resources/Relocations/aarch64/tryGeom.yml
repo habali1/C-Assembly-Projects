@@ -1,0 +1,23 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     tryGeom
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _coord_create, symObjAddr: 0x0, symBinAddr: 0x100003858, symSize: 0x48 }
+  - { offsetInCU: 0x2B, offset: 0x2B, size: 0x8, addend: 0x0, symName: _coord_format, symObjAddr: 0x118, symBinAddr: 0x100003970, symSize: 0x94 }
+  - { offsetInCU: 0x50, offset: 0x50, size: 0x8, addend: 0x0, symName: _coord_format.buf, symObjAddr: 0x842, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x82, offset: 0x82, size: 0x8, addend: 0x0, symName: _coord_create, symObjAddr: 0x0, symBinAddr: 0x100003858, symSize: 0x48 }
+  - { offsetInCU: 0xC6, offset: 0xC6, size: 0x8, addend: 0x0, symName: _coord_getx, symObjAddr: 0x48, symBinAddr: 0x1000038A0, symSize: 0x18 }
+  - { offsetInCU: 0xEE, offset: 0xEE, size: 0x8, addend: 0x0, symName: _coord_gety, symObjAddr: 0x60, symBinAddr: 0x1000038B8, symSize: 0x18 }
+  - { offsetInCU: 0x116, offset: 0x116, size: 0x8, addend: 0x0, symName: _coord_move, symObjAddr: 0x78, symBinAddr: 0x1000038D0, symSize: 0x40 }
+  - { offsetInCU: 0x156, offset: 0x156, size: 0x8, addend: 0x0, symName: _coord_distance, symObjAddr: 0xB8, symBinAddr: 0x100003910, symSize: 0x60 }
+  - { offsetInCU: 0x1A8, offset: 0x1A8, size: 0x8, addend: 0x0, symName: _coord_delete, symObjAddr: 0x1AC, symBinAddr: 0x100003A04, symSize: 0x3C }
+  - { offsetInCU: 0x1E, offset: 0x227, size: 0x8, addend: 0x0, symName: _line_create, symObjAddr: 0x0, symBinAddr: 0x100003A40, symSize: 0x70 }
+  - { offsetInCU: 0x2B, offset: 0x234, size: 0x8, addend: 0x0, symName: _line_format, symObjAddr: 0x208, symBinAddr: 0x100003C48, symSize: 0x94 }
+  - { offsetInCU: 0x50, offset: 0x259, size: 0x8, addend: 0x0, symName: _line_format.buff, symObjAddr: 0x95D, symBinAddr: 0x10000803C, symSize: 0x0 }
+  - { offsetInCU: 0x82, offset: 0x28B, size: 0x8, addend: 0x0, symName: _line_create, symObjAddr: 0x0, symBinAddr: 0x100003A40, symSize: 0x70 }
+  - { offsetInCU: 0xC6, offset: 0x2CF, size: 0x8, addend: 0x0, symName: _line_from_coords, symObjAddr: 0x70, symBinAddr: 0x100003AB0, symSize: 0xEC }
+  - { offsetInCU: 0x118, offset: 0x321, size: 0x8, addend: 0x0, symName: _line_intersect, symObjAddr: 0x15C, symBinAddr: 0x100003B9C, symSize: 0xAC }
+  - { offsetInCU: 0x16A, offset: 0x373, size: 0x8, addend: 0x0, symName: _line_delete, symObjAddr: 0x29C, symBinAddr: 0x100003CDC, symSize: 0x3C }
+  - { offsetInCU: 0x1E, offset: 0x407, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D18, symSize: 0x184 }
+  - { offsetInCU: 0x39, offset: 0x422, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D18, symSize: 0x184 }
+...

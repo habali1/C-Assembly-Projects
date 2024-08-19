@@ -1,0 +1,20 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     grades
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002EC4, symSize: 0x1CC }
+  - { offsetInCU: 0x45, offset: 0x45, size: 0x8, addend: 0x0, symName: _colNames, symObjAddr: 0x1048, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x6B, offset: 0x6B, size: 0x8, addend: 0x0, symName: _aNames, symObjAddr: 0x1128, symBinAddr: 0x1000080E0, symSize: 0x0 }
+  - { offsetInCU: 0x8C, offset: 0x8C, size: 0x8, addend: 0x0, symName: _bNames, symObjAddr: 0x12D8, symBinAddr: 0x100008290, symSize: 0x0 }
+  - { offsetInCU: 0xAD, offset: 0xAD, size: 0x8, addend: 0x0, symName: _aGrades, symBinAddr: 0x1000083E0, symSize: 0x0 }
+  - { offsetInCU: 0xDB, offset: 0xDB, size: 0x8, addend: 0x0, symName: _bGrades, symBinAddr: 0x10000AFA0, symSize: 0x0 }
+  - { offsetInCU: 0xF0, offset: 0xF0, size: 0x8, addend: 0x0, symName: _retBufferArea, symBinAddr: 0x10000DB68, symSize: 0x0 }
+  - { offsetInCU: 0x112, offset: 0x112, size: 0x8, addend: 0x0, symName: _retBuffer, symBinAddr: 0x10000DB60, symSize: 0x0 }
+  - { offsetInCU: 0x127, offset: 0x127, size: 0x8, addend: 0x0, symName: _txtFile, symBinAddr: 0x10000EF68, symSize: 0x0 }
+  - { offsetInCU: 0x335, offset: 0x335, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002EC4, symSize: 0x1CC }
+  - { offsetInCU: 0x3B1, offset: 0x3B1, size: 0x8, addend: 0x0, symName: _getGrades, symObjAddr: 0x1CC, symBinAddr: 0x100003090, symSize: 0x1F0 }
+  - { offsetInCU: 0x3FF, offset: 0x3FF, size: 0x8, addend: 0x0, symName: _getAvgs, symObjAddr: 0x3BC, symBinAddr: 0x100003280, symSize: 0x60 }
+  - { offsetInCU: 0x44D, offset: 0x44D, size: 0x8, addend: 0x0, symName: _printGrades, symObjAddr: 0x41C, symBinAddr: 0x1000032E0, symSize: 0x23C }
+  - { offsetInCU: 0x50B, offset: 0x50B, size: 0x8, addend: 0x0, symName: _getAvg, symObjAddr: 0x658, symBinAddr: 0x10000351C, symSize: 0x2B4 }
+  - { offsetInCU: 0x59F, offset: 0x59F, size: 0x8, addend: 0x0, symName: _getUserLine, symObjAddr: 0x90C, symBinAddr: 0x1000037D0, symSize: 0xB0 }
+...

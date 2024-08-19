@@ -13,21 +13,8 @@ This repository is a collection of various projects designed to illustrate key c
 
 Each project includes relevant source code files, build instructions, and sometimes scripts for testing or debugging.
 
-## Getting Started
+## Information for no' s
 
-To get started with any of the projects:
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone <repository-url>
-   ```
-2. **Navigate to the Project Directory**
-
-    ```
-    cd <project-directory>
-    ```
-3. **Build and Run**
-    ```
-    make
-    ```
+From 01 to 11 I learned how to solve simple tasks.
+From 12 to 16 I implemented what I learned on a bit harder tasks
+From 17 to 19 are hardest tasks that I accomplished or still continue on generating.

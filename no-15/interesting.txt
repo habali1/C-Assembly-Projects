@@ -1,0 +1,34 @@
+Pick a line or two from your C file and tell us why the translation
+of that line or lines to X86 assembler was interesting.
+
+1-
+leaq	.LC0(%rip), %rax
+movq	%rax, %rdi
+call	printf@PLT
+
+leaq	-9(%rbp), %rax
+movq	%rax, %rsi
+leaq	.LC1(%rip), %rax
+movq	%rax, %rdi
+call	__isoc99_scanf@PLT
+
+//Here, printf is called to prompt the user, and scanf reads a character into the variable
+ ch. As far as I understand .LCx refer to string literals used in the C code.
+
+2-
+
+movl	$65, -4(%rbp) # initilizes i
+jmp	.L2            # Jumps to loop check
+.L5:
+    # Inner loop starts
+    movl	$65, -8(%rbp) # initilizing j
+    
+.L3:
+    addl	$1, -8(%rbp)  # increments j
+    cmpl	-4(%rbp), %eax # compares j with i
+    jle	.L4              # jumps back if j is less than or equal to i
+    # printing newline char and increment i in the outer loop
+    addl	$1, -4(%rbp)  # increments i
+.L2:
+    cmpl	%eax, -4(%rbp) # compares i with the scanned character
+    jle	.L5              # jumps back if i is less than or equal to ch
