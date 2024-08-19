@@ -1,45 +1,41 @@
-# Lab10 - Stack Discovery
+# Linked List Implementation
 
-## Assignment Goals
+This project consists of implementing a singly linked list in C. The implementation includes functions for creating and manipulating the list, such as inserting nodes at different positions, checking for list validity, printing the list, and freeing allocated memory. The project also demonstrates how to use GDB for debugging the linked list operations.
 
-Today's lab is designed to get familiar with the X86 ISA, specifically with the use of the stack in the X86 ISA. No coding is required. I have provided you with a correct implementation of the linked list C code we worked on for homework assignment 2, slightly modified to simplify the code. I have also provided the basic gdb commands to run the code under gdb in a Makefile. Today's lab will consist of running the code and looking at how the stack is used by that code.
+## Files
 
-You will need to answer questions about the stack in Gradescope to complete the lab.
+- **list.c**: Contains the implementation of linked list functions, including creation, insertion (start, end, and ordered), getting the tail, checking validity, printing the list, and freeing the list.
+- **list.h**: Header file defining the linked list interface, including function prototypes and the `list` type.
+- **node.c**: Contains the implementation of node operations, including creation, getting and setting the next node, getting the payload, printing the node, and freeing the node.
+- **node.h**: Header file defining the node interface, including function prototypes and the `node` type.
+- **tryList.c**: Contains test code for demonstrating and verifying the linked list operations.
+- **makefile**: A Makefile for compiling the project, generating the executable `tryList`, and setting up GDB for debugging.
+- **gdb_cmds.txt**: A file with GDB commands for debugging the program.
 
-## Basic Concepts : Stack Usage
+## Usage
 
-We have been studying X86 stack usage in the [X86 Stack](https://www.cs.binghamton.edu/~tbartens/CS220_Spring_2024/Lectures/L13_x86_Stack.pdf) lecture. The basic ideas to keep in mind from this lecture are:
+### Compiling the Program
 
-1. Every function has "prefix" code which creates an invocation record or stack frame for that function. The stack frame will contain all the local variables, parameter values, and some other information about the function invocation. While that function is executing the %rbp register points to the 8 byte "word" at the top of the stack frame, and the %rsp register points at the bottom of the stack frame. The stack frame is "pushed" onto the stack, below the stack frame of the calling function.
+To compile the program, simply run:
 
-2. When the function returns, is has "suffix" code which "pops" its stack frame from the stack, and restores %rbp and %rsp to point to its caller's stack frame.
+```bash
+make
+```
+## What I Learned
 
-## Provided Code
+Working on this project taught me several key things:
 
-There are several files in this repository already. These are the files used in HW02. See the HW02 readme for more details on linked lists and the code itself. However, for this lab, the details of the C code are not important.
+1. **Linked List Implementation**:
+   - I learned how to implement and manage a singly linked list in C, including functions for insertion, deletion, and traversal.
 
-Source code is in `node.h` and `node.c`, `list.h` and `list.c`, and `tryList.c`. I have provided correct implementations of all this code. You will not need to modify any of these files.
+2. **Dynamic Memory Management**:
+   - I gained experience in handling dynamic memory allocation and deallocation, ensuring proper memory management to prevent leaks and dangling pointers.
 
-I have also provided a slightly modified Makefile that defines targets for:
+3. **List Validity and Debugging**:
+   - I developed skills in validating the integrity of a linked list to avoid endless loops and other issues. I also practiced debugging techniques using GDB to identify and resolve problems in the code.
 
-- `gdb` : Runs gdb using a predefined set of arguments, with some setup commands as defined in `gdb_cmds.txt`
-- `tryList` : Defines how to build the tryList executable file.
-- `clean` : removes all the extra files created by the Makefile
+4. **GDB Usage**:
+   - I learned how to use GDB for debugging C programs, including setting breakpoints, running commands, and inspecting variables.
 
-I have also provided `gdb_cmds.txt` which has some initial gdb commands to run for this lab.
-
-## Doing the Assignment
-
-Clone the assignment on an LDAP machine. (Note that the assignment may run on other machines, but you may get different, incorrect answers to the Gradescope questions.)
-
-Run `make gdb` to get started. This will break before executing the first instruction in the `main` function. Before going farther, open up Gradescope to Lab10, and follow the directions in Gradescope.
-
-You may also want to use my [How To Use GDB](https://www.cs.binghamton.edu/~tbartens/HowTo/Using_gdb) web page as a reference.
-
-Once you have finished all the Gradescope questions, submit on Gradescope, and you are finished with the lab. No need to submit anything else on Brightspace.
-
-## Assignment Grading
-
-We will use the Gradescope answers to grade your lab.
-
-- -2 for every 24 hours (or part of 24 hours) after the submission date.
+5. **Testing and Verifying Code**:
+   - I practiced writing test cases to verify the correctness of linked list operations and ensure that the implementation behaves as expected under various scenarios.
